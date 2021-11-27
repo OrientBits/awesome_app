@@ -1,4 +1,6 @@
 import 'package:awesomeapp/drawer.dart';
+import 'package:awesomeapp/pages/login_page.dart';
+import 'package:awesomeapp/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -33,6 +35,16 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
         title: const Text("Awesome App"),
+        actions: [
+          IconButton(
+              onPressed: () {
+                Constants.prefs.setBool('loggedIn', false);
+                // Navigator.pushReplacement(context,
+                //     MaterialPageRoute(builder: (context) => LoginPage()));
+                Navigator.pushReplacementNamed(context, '/login');
+              },
+              icon: Icon(Icons.exit_to_app))
+        ],
       ),
       body: Padding(
         padding: EdgeInsets.all(0),
