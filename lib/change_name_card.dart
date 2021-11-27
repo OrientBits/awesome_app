@@ -16,7 +16,7 @@ class ChangeNameCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset('assets/bg.jpg', fit: BoxFit.cover),
+        Image.asset('assets/bgsfsd.jpg', fit: BoxFit.cover),
         Padding(
           padding: const EdgeInsets.only(left: 16, right: 16, top: 25),
           child: Text(

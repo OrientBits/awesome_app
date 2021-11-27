@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
         title: const Text("Awesome App"),
       ),
       body: Padding(
-        padding: EdgeInsets.all(16),
+        padding: EdgeInsets.all(0),
         child: data != null
             ? ListView.builder(
                 itemBuilder: (context, index) {
