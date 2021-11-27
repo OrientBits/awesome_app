@@ -1,5 +1,5 @@
 
-import 'package:awesomeapp/bg.dart';
+import 'package:awesomeapp/widgets/bg.dart';
 import 'package:awesomeapp/utils/constants.dart';
 import 'package:flutter/material.dart';
 

@@ -1,4 +1,5 @@
 import 'package:awesomeapp/pages/home_page.dart';
+import 'package:awesomeapp/pages/home_page_with_fb.dart';
 import 'package:awesomeapp/pages/login_page.dart';
 import 'package:awesomeapp/utils/constants.dart';
 import 'package:flutter/cupertino.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       title: 'awesome app',
       theme: ThemeData(primarySwatch: Colors.purple),
       home: (Constants.prefs.getBool('loggedIn') == true)
-          ? HomePage()
+          ? HomePageFB()
           : LoginPage(),
       routes: {
         '/login': (context) => LoginPage(),
